@@ -1,0 +1,69 @@
+
+.button { 
+  color: #f9ffee;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #f9ffee;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: .5s ease;
+  border-style: hidden;
+  color: #1F242C;
+  background-color: #f9ffee;
+}
+
+.button:hover a {
+  color: #1F242C;
+}
+
+.button--size-s {
+  width: 248px;
+  height: 45px;
+}
+
+.button--icon {
+  font-size: 0;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+}
+
+.button--size-m {
+  width: 280px;
+  height: 55px;
+}
+
+@media only screen and (min-width: 1024px) {
+
+.button {
+  font-size: 18px;
+}
+
+.button--size-s {
+  font-size: 16px;
+}
+
+.button--icon {
+  font-size: 16px;
+  border-radius: 0;
+  width: 207px;
+  height: 45px;
+}
+
+.button--size-m {
+  width: 320px;
+  height: 68px;
+}
+}
+
+@media only screen and (min-width: 1250px) {
+  
+.button--size-m {
+  width: 270px;
+  height: 60px;
+}
+}
+  

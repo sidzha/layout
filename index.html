@@ -1,131 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<link rel="icon" type="image/png" href="img/favicon.ico">
-	<link rel="stylesheet" href="css/flickity.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Shakhriyar Dzhafarov | sidzha@ya.ru</title>
-	<script src="js/script.js" defer=""></script>
-	<script src="js/flickity.pkgd.min.js"></script>
-	<script src="js/jquery-3.4.1.min.js"></script>
-</head>
-<header>
-	<button class="header__button" onclick="openNav()"></button>
-	<div class="side-menu" id="mySideMenu">
-		<a href="javascript:void(0)" class="side-menu__closebtn" onclick="closeNav()">&times;</a>
-		<div class="theme-switcher">
-			  	<label class="theme-switcher__label" for="checkbox">
-			  		<input type="checkbox" id="checkbox" />
-			  		<div class="slider round"></div>
-			  	</label>
-			  	<span class="theme-switcher__icon"></span>
-		</div>
-		<a href="#C1">Услуги</a>
-		<a href="#C2">Портфолио</a>
-		<a href="#C3">Стоимость</a>
-		<a href="#C4">Контакты</a>
-	</div>
-	<div class="header-menu">
-		<a class="header-menu__link" href="#C1">Услуги</a>
-		<a class="header-menu__link" href="#C2">Портфолио</a>
-		<a class="header-menu__link" href="#C3">Стоимость</a>
-		<div class="theme-switcher2 theme-switcher">
-				  	<label class="theme-switcher__label" for="checkbox">
-				  		<input type="checkbox" id="checkbox" />
-				  		<div class="slider2 slider round"></div>
-				  	</label>
-				  	<span class="theme-switcher__icon"></span>
-		</div>
-	</div>
-	<a class="header__phone" href="tel:+7 (499) 995-55-77">+7 (499) 995-55-77</a>
-	<button class="header__smallbutton"></button>
-	<button class="header__bigbutton button-transparent">Заказать звонок</button>
-</header>
+  <head>
+    <title>Shakhriyar Dzhafarov | sidzha@ya.ru</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/flickity.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles@1024.css">
+    <link rel="stylesheet" href="css/styles@1250.css">
+    <link rel="stylesheet" href="css/components/styles@buttons.css">
+    <link rel="stylesheet" href="css/components/styles@navIcon.css">
+    <link rel="stylesheet" href="css/components/styles@callBack.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/scripts.js" defer=""></script>
+  </head>
+  
+  <body>
+    <header class="header">
+        <div class="container">
+          <button class="header__button header__button--hamburger" onclick="myFunction()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="header__nav" id="header__nav">
+            <ul>
+              <li><a href="#skills"><i class="la la-chain"></i>Услуги</a></li>
+              <li><a href="#works"><i class="la la-chain"></i>Портфолио</a></li>
+              <li><a href="#price"><i class="la la-chain"></i>Стоимость</a></li>
+            </ul>
+          </nav>
+          <a href="tel:+7(499)995-55-77" class="header__phone">+7 (499) 995-55-77</a>
+          <button class="button button--icon" onclick="location.href='#popup'">
+            Заказать звонок
+            <i class="la la-phone"></i>
+          </button>
+        </div>
+      
+      <div class="popup__overlay" id="popup">
+        <form class="callback__popup">
+          <h2 class="heading heading--h2">Обратный звонок</h2>
+          <p class="popup__desc">Оставьте свой номер и&nbsp;я&nbsp;Вам обязательно позвоню! 👳🏽‍</p>
+          <p class="name-wrapper">
+            <label for="name"><em>Ваше имя:</em></label>
+            <input type="text" name="name" required>
+          </p>
+          <p>
+            <label for="phone"><em>Ваш телефон:</em></label>
+            <input type="tel" name="phone" required>
+          </p>
+          <button class="button button--size-m">Жду звонка 🤙</button>
+          <a class="popup__closebtn" href="#">&times;</a>
+        </form>
+      </div> 
+    
+    </header>
 
-<body>
-<main>
+    <section class="about">
+      <div class="about__symbols" aria-hidden="true">
+        <span class="symbols__item symbols__item--1">&lt;&sol;&gt;</span>
+        <span class="symbols__item symbols__item--2">&lcub;&nbsp;&rcub;</span>
+        <span class="symbols__item symbols__item--3">&lt;div&gt;</span>
+        <span class="symbols__item symbols__item--4">&num;</span>
+        <span class="symbols__item symbols__item--5">&lt;&sol;&gt;</span>
+      </div>	
+      <div class="container">
+        <div class="about__photo">
+          <img src="img/bg-1.png" alt="photo">
+        </div>
+        <div class="about__name">
+            <h1 class="heading heading--h1">Джафаров&nbsp;Шахрияр</h1>
+            <span class="about__desc">Frontend-разработчик и&nbsp;веб-верстальщик</span>
+            <button class="button button--size-m">
+              <a href="#skills">Узнать больше</a>
+            </button>
+        </div>    
+      </div>
+    </section>
 
-	<section class="about-me">
-		<div class="about-me__symbols" aria-hidden="true">
-			<span class="symbols__item symbols__item--1">{ }</span>
-			<span class="symbols__item symbols__item--2">< / ></span>
-			<span class="symbols__item symbols__item--3">< div ></span>
-			<span class="symbols__item symbols__item--4">( ͡° ͜ʖ ͡°)</span>
-			<span class="symbols__item symbols__item--5">#</span>
-		</div>	
-		<div class="about-me__photo"><img src="img/bg-1.png"></div>
-		<div class="about-me__wrapper">
-			<h1 class="about-me__header">Джафаров&nbsp;Шахрияр</h1>
-			<span class="about-me__profession">Frontend-разработчик и&nbsp;веб-верстальщик</span>
-			<button class="about-me__button button-blue" onclick="location.href='#C1'">Узнать больше</button>
-		</div>	
-	</section>
+    <section class="skills container" id="skills">
+      <h2 class="heading heading--h2">Что я делаю</h2>
+      <div class="skills__wrapper container">
+        <span class="skills__item skills__item--1">Вёрстка лендинг-страниц и&nbsp;сайтов любой сложности</span>
+        <span class="skills__item skills__item--2">Адаптивная вёрстка под все браузеры и&nbsp;устройства</span>
+        <span class="skills__item skills__item--3">Frontend-разработка и&nbsp;программирование</span>
+        <span class="skills__item skills__item--4">Исправление и&nbsp;доработка существующей вёрстки</span>
+      </div>
+      <button class="button button--size-m">
+        <a href="#price">Узнать стоимость</a>
+      </button>  
+    </section>
 
-	<section class="about-skills">
-		<h2 class="about-skills__header" id="C1">Что я делаю</h2>
-		<ul class="about-skills__perks">
-			<li class="about-skills__item about-skills__item--1">Вёрстка лендинг&mdash;страниц и&nbsp;сайтов любой сложности</li>
-			<li class="about-skills__item about-skills__item--2">Адаптивная вёрстка под все браузеры и&nbsp;устройства</li>
-			<li class="about-skills__item about-skills__item--3">Frontend&nbsp;&mdash; разработка и&nbsp;программирование</li>
-			<li class="about-skills__item about-skills__item--4">Исправление и&nbsp;доработка существующей вёрстки</li>
-		</ul>
-		<button class="about-skills__button button-blue" onclick="location.href='#C3'">Узнать стоимость</button>
-	</section>	
+    <section class="works" id="works">
+      <div class="container">
+        <h2 class="heading heading--h2">Примеры моих работ</h2>
+        <div class="works__carousel" data-flickity>
+            <div class="carousel-cell">
+              <img class="works__img" src="img/my-work-1.png" alt="Сайт про печенье">
+              <span class="works__paragraph">Сайт про печенье</span>
+            </div>
+            <div class="carousel-cell">
+              <img class="works__img" src="img/my-work-2.png" alt="Ещё сайт про печенье">
+              <span class="works__paragraph">Ещё сайт про печенье</span>
+            </div>
+            <div class="carousel-cell">
+              <img class="works__img" src="img/my-work-3.png" alt="Много-много печенья">
+              <span class="works__paragraph">Много-много печенья</span>
+            </div>
+            <div class="carousel-cell">
+                <img class="works__img" src="img/my-work-4.png" alt="Om nom nom!">
+                <span class="works__paragraph">Om nom nom!</span>
+            </div>
+        </div>
+        <button class="button button--size-m">
+          <a href="#popup">Заказать проект</a>
+        </button>
+      </div>
+    </section>
 
-	<section class="about-works" id="C2">
-		<h2 class="about-works__header">Примеры моих работ</h2>
-		<div class="about-works__carousel" data-flickity>
-			<div class="carousel-cell">
-				<img class="about-works__img" src="img/my-work-1.png">
-				<span class="about-works_paragraph">Сайт про печенье</span>
-			</div>
-			<div class="carousel-cell">
-				<img class="about-works__img" src="img/my-work-2.png">
-				<span class="about-works_paragraph">Ещё сайт про печенье</span>
-			</div>
-			<div class="carousel-cell">
-				<img class="about-works__img" src="img/my-work-3.png">
-				<span class="about-works_paragraph">Много-много печенья</span>
-			</div>
-		</div>
-		<button class="about-works__button button-blue">Заказать проект</button>
-	</section>
+    <section class="price" id="price">
+      <div class="about__symbols" aria-hidden="true" id="price">
+        <span class="symbols__item symbols__item--6">&lt;&sol;&gt;</span>
+        <span class="symbols__item symbols__item--7">&lcub;&nbsp;&rcub;</span>
+        <span class="symbols__item symbols__item--8">&lt;div&gt;</span>
+        <span class="symbols__item symbols__item--9">&num;</span>
+        <span class="symbols__item symbols__item--10">&lcub;&nbsp;&rcub;</span>
+      </div>
+      <div class="container">
+        <h2 class="heading heading--h2">Адаптивная вёрстка под все устройства и&nbsp;браузеры за&nbsp;пачку кукис всего за&nbsp;4&nbsp;часа.*</h2>
+        <p class="price__desc">* Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</p>
+      </div>
+    </section>
 
-	<section class="about-prices" id="C3">
-		<h2 class="about-prices__header">Адаптивная вёрстка под все устройства и&nbsp;браузеры за&nbsp;пачку кукис всего за&nbsp;4&nbsp;часа.*</h2>
-		<p class="about-prices__paragraph">* Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</p>
-	</section>
-	
-</main>
-
-<footer>
-	<ul class="footer-menu footer-list">
-		<li><a class="footer-menu__link" href="">Услуги</a></li>
-		<li><a class="footer-menu__link" href="">Портфолио</a></li>
-		<li><a class="footer-menu__link" href="">Стоимость</a></li>
-	</ul>
-	<ul class="footer-contacts footer-list" id="C4">
-		<li class="footer-contacts__item footer-contacts__item--1">
-			<a class="footer-contacts__link" href="tel:+7 (499) 995-55-77">+7 (499) 995-55-77</a>
-		</li>
-		<li class="footer-contacts__item footer-contacts__item--2">
-			<a class="footer-contacts__link" href="mailto:cockiemonster@gmail.com">cockiemonster@gmail.com</a></li>
-	</ul>
-	<div class="footer-wrapper">
-		<button class="button-blue">Заказать звонок</button>
-		<button class="button-transparent">Заказать звонок</button>
-		<ul class="footer-socials footer-list">
-			<li><a href="#" class="footer-socials__item footer-socials__item--vk" aria-label="Vkontakte"></a></li>
-			<li><a href="#" class="footer-socials__item footer-socials__item--fb" aria-label="Facebook"></a></li>
-			<li><a href="#" class="footer-socials__item footer-socials__item--twit" aria-label="Twitter"></a></li>
-			<li><a href="#" class="footer-socials__item footer-socials__item--insta" aria-label="Instagram"></a></li>
-			</li>
-		</ul>
-	</div>		
-</footer>
-<span class="bottom-copyright">© Шахрияр Джафаров, 2019 – 2019</span>
-
-
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__menu-list">
+          <li><a class="menu__item" href="">Услуги</a></li>
+          <li><a class="menu__item" href="">Портфолио</a></li>
+          <li><a class="menu__item" href="">Стоимость</a></li>
+        </ul>
+        <ul class="footer__contacts-list" id="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+7(499)995-55-77"><i class="la la-phone"></i>+7 (499) 995-55-77</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:cockiemonster@gmail.com"><i class="la la-envelope"></i>cockiemonster@gmail.com</a>
+          </li>
+        </ul>
+        <div>
+          <button class="button button--size-s">
+            <a href="#popup">Заказать звонок</a>
+          </button>
+          <ul class="social-icons">
+            <li><a href="#" class="social-icons__item social-icons__item--vk" aria-label="Vkontakte"></a></li>
+            <li><a href="#" class="social-icons__item social-icons__item--fb" aria-label="Facebook"></a></li>
+            <li><a href="#" class="social-icons__item social-icons__item--twit" aria-label="Twitter"></a></li>
+            <li><a href="#" class="social-icons__item social-icons__item--insta" aria-label="Instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+      <span class="footer__copyright"> Шахрияр Джафаров © 2019</span>
+    </footer>
+  </body>
 </html>
