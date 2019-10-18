@@ -19,27 +19,12 @@ $(function() {
 });
 
 
-//mobile menu animation
-$(document).ready(function(){
-	$('.header__button--hamburger').click(function(){
-		$(this).toggleClass('open');
-	});
+//Код анимации кнопки меню и самой менюшки
+
+var buttonElement = document.querySelector('.header__button');
+var navElement = document.querySelector('.header__nav');
+
+buttonElement.addEventListener('click', function(){
+  buttonElement.classList.toggle('open');
+  navElement.classList.toggle('header__nav--active');
 });
-
-
-function myFunction() {
-  let x = document.getElementById("header__nav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
-// var buttonElement = document.querySelector('.header__button');
-// buttonElement.addEventListener('click', buttonClick);
-
-// var navElement = document.querySelector('header__nav');
-// function buttonClick() {
-//   navElement.classList.toogle('header__nav--active');
-// }

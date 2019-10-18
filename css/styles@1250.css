@@ -16,9 +16,6 @@
 
 .header__nav {
   display: block;
-  position: static;
-  border-style: hidden;
-  background: transparent;
   margin-right: 370px;
 }
 

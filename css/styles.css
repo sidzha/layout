@@ -82,8 +82,16 @@ ul {
 }
 
 .header__nav {
-  z-index: 10;
   display: none;
+}
+
+.header__nav a {
+  color: #f9ffee;
+}
+
+.header__nav--active {
+  z-index: 10;
+  display: block;
   position: absolute;
   color: #f9ffee;
   background-color: #1F242C;
@@ -95,18 +103,10 @@ ul {
   top: 60px;
 }
 
-.header__nav a {
-  color: #f9ffee;
-}
-
 .header__nav .la-chain {
   color: #fee6c0;
   padding-right: 20px;
 }
-
-/* .header__nav--active {
-  display: block;
-} */
 
 .header__phone {
   font-size: 18px;
