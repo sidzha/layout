@@ -14,7 +14,8 @@
 + адаптивная mobile-first верстка
 + куки монстр
 
+---
 
-- night-mod switcher не дожил до финального релиза, но обещал вернуться!
+Night-mod switcher не дожил до финального релиза, но обещал вернуться!
 
-![](https://i.imgur.com/a/9M690eS.gif)
+![](https://github.com/sidzha/sidzha.github.io/blob/master/landing-switch.gif)
